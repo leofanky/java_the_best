@@ -1,3 +1,6 @@
-language: java
-sudo: false
-script: mvn clean verify
+jdk:
+ - openjdk11
+script:
+mvn verify
+after_success:
+after_failure:
